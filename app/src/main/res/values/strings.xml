@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">zhaorui-reflex</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_reaction_timer">reactionTimerActivity</string>
+    <string name="title_activity_stat">statActivity</string>
+    <string name="title_activity_buzzer_setter">buzzerSetterActivity</string>
+    <string name="title_activity_rt_stat">RtStatActivity</string>
+    <string name="title_activity_buzzer_stat">BuzzerStatActivity</string>
+    <string name="title_activity_buzzer">BuzzerActivity</string>
+    <string name="title_activity_buzzer_stat2p">BuzzerStat2pActivity</string>
+    <string name="title_activity_buzzer_stat3p">BuzzerStat3pActivity</string>
+    <string name="title_activity_buzzer_stat4p">BuzzerStat4pActivity</string>
+</resources>
