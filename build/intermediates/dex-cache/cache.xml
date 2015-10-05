@@ -2,39 +2,39 @@
 <items version="2" >
 
     <item
-        jar="/home/teppie/AndroidStudioProjects/ZhaoruiAssignment1/ZhaoruiAssignment1/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="/home/teppie/AndroidStudioProjects/ZhaoruiAssignment1/ZhaoruiAssignment1/app/build/intermediates/pre-dexed/release/classes-232a766b80da2b1e23a1607cf3381524ccf3c254.jar" />
-    </item>
-    <item
-        jar="/home/teppie/AndroidStudioProjects/ZhaoruiAssignment1/ZhaoruiAssignment1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/home/teppie/AndroidStudioProjects/ZhaoruiAssignment1/ZhaoruiAssignment1/app/build/intermediates/pre-dexed/release/classes-94bdf7ef0bab729863ce22ca92ba837c9927e490.jar" />
-    </item>
-    <item
-        jar="/home/teppie/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/home/teppie/AndroidStudioProjects/ZhaoruiAssignment1/ZhaoruiAssignment1/app/build/intermediates/pre-dexed/release/gson-2.3.1-19e69163e658712da228425b550ba045ac15fed8.jar" />
-    </item>
-    <item
-        jar="/home/teppie/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jar="/usr/local/share/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="/home/teppie/AndroidStudioProjects/ZhaoruiAssignment1/ZhaoruiAssignment1/app/build/intermediates/pre-dexed/release/support-annotations-22.2.1-2dfbc133b121d1f9815a1ccb969a7edd58a12203.jar" />
+        <dex dex="/cshome/zhaorui/New Folder/ZhaoruiAssignment1/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-6b8f43d628bde674586e533393329d929d7ff825.jar" />
     </item>
     <item
-        jar="/home/teppie/AndroidStudioProjects/ZhaoruiAssignment1/ZhaoruiAssignment1/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jar="/cshome/zhaorui/New Folder/ZhaoruiAssignment1/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/cshome/zhaorui/New Folder/ZhaoruiAssignment1/app/build/intermediates/pre-dexed/debug/classes-70e3a996a1ddbda90d3cf3460723a900a2d2eebb.jar" />
+    </item>
+    <item
+        jar="/cshome/zhaorui/New Folder/ZhaoruiAssignment1/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/home/teppie/AndroidStudioProjects/ZhaoruiAssignment1/ZhaoruiAssignment1/app/build/intermediates/pre-dexed/release/internal_impl-22.2.1-18d1f6aedcc3c4993f768348a4d321731eb77908.jar" />
+        <dex dex="/cshome/zhaorui/New Folder/ZhaoruiAssignment1/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-046f04be328d1078acd1ff11cc6b94de7d410c4b.jar" />
+    </item>
+    <item
+        jar="/cshome/zhaorui/New Folder/ZhaoruiAssignment1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/cshome/zhaorui/New Folder/ZhaoruiAssignment1/app/build/intermediates/pre-dexed/debug/classes-f581c430e8c82315907647011e5714b3f97202b4.jar" />
+    </item>
+    <item
+        jar="/cshome/zhaorui/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/cshome/zhaorui/New Folder/ZhaoruiAssignment1/app/build/intermediates/pre-dexed/debug/gson-2.3.1-40ee5b1afb72e9f03d4e944ad0c428ab17b72a90.jar" />
     </item>
 
 </items>

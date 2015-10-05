@@ -5,7 +5,7 @@ ccid: zhaorui
 
 App Name: zhaorui-reflex
 
-Video demo: https://youtu.be/nOwm2es3Kv8 recorded by simplescreenrecorder
+Video demo: https://youtu.be/CyP6Nyhv8ls recorded by simplescreenrecorder
 
 This is an Android application for CMPUT301F15 Assignment1, including source code and compiled apk file.
 
