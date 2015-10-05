@@ -19,7 +19,9 @@ Note:
 
 2. Regarding to statistics for reaction timer, if there are no more than 10 times of playing, the statistics showed for "the last 10 times" will be generated from all times of playing(might be less than 10 times). Likewise for "the last 100 times".
 
-3. The application is under the Apache 2.0 License 2015. See the LISENCE for details in this repo.
+3. The application is under the Apache 2.0 License 2015. See the LISENCE for details in this repo.  
+
+4. APK file is located in ~/bin folder, java code is located ~/app/src/ subfolder.
 
 
 Citation:
