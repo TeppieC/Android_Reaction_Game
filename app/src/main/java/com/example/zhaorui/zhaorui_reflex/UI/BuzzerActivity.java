@@ -1,3 +1,19 @@
+/**Copyright 2015 Zhaorui Chen
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+
+ **/
+
 package com.example.zhaorui.zhaorui_reflex.UI;
 
 import android.app.AlertDialog;
@@ -16,6 +32,13 @@ import com.example.zhaorui.zhaorui_reflex.Model.GameBuzzer;
 import com.example.zhaorui.zhaorui_reflex.Model.Player;
 
 public class BuzzerActivity extends Activity implements View.OnClickListener {
+    /*
+     * The class is to render a gameshow buzzer in screen.
+     *
+     * note: It will obtain data from BuzzerSetterActivity and render
+     * its layout using java dynamically instead of XML.
+     *
+     */
     private GameBuzzer gameBuzzer;
     private Button[] btnArray;
     private Player[] playersArray;
@@ -120,7 +143,6 @@ public class BuzzerActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    //////////////////////////////try this function in GameBuzzer class
     private void resultDialog(String winner) {
         final AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("The winner is...");

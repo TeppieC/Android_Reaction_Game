@@ -1,3 +1,19 @@
+/**Copyright 2015 Zhaorui Chen
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+
+ **/
+
 package com.example.zhaorui.zhaorui_reflex.UI;
 
 import android.content.DialogInterface;
@@ -17,14 +33,24 @@ import com.example.zhaorui.zhaorui_reflex.Model.ReactionTimer;
 
 import java.util.List;
 
+
 public class ReactionTimerActivity extends ActionBarActivity {
+    /*
+     * The class displays the UI for reaction timer game.
+     * It will first pop out a instruction dialog indicates
+     * what the user should do and change the text of the
+     * button after 20~2000ms waiting for user to click. It
+     * will give a complaint dialog if the user has clicked
+     * too fast or a result dialog to show the user his
+     * reaction time this time.
+     *
+     */
 
     private String FILENAME = "rtStats.sav";
     private Button button;
     private RTimerRecordManager rtRecord = new RTimerRecordManager(this, FILENAME);
     private ReactionTimer reactionTimer;
     private MyCountdownTimer countDownTimer;
-    private long tStart = System.currentTimeMillis();
     private List<Integer> reactionTimes;
 
     @Override
@@ -62,27 +88,18 @@ public class ReactionTimerActivity extends ActionBarActivity {
     }
 
     private void wholeProcess(){
-        //https://androidcookbook.com/Recipe.seam;jsessionid=DF53064E03C7505C4EBF727E56E0728E?recipeId=1205
+        //Idea from: https://androidcookbook.com/Recipe.seam;jsessionid=DF53064E03C7505C4EBF727E56E0728E?recipeId=1205
         countDownTimer = reactionTimer.generateNewTimer(); // generate a new timer for this round
-        countDownTimer.start();
-        countDownTimer.setTimerStopped(false);
+        reactionTimer.startTimer(countDownTimer);// start the timer
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!countDownTimer.isTimerStopped()) { // if player pressed too fast
-                    countDownTimer.cancel();
-                    countDownTimer.setTimerStopped(true);
+                if (reactionTimer.reactionTimeMeasure(countDownTimer)==-1) { // if player pressed too fast
                     complainDialog(); // pops up the complain dialog
 
                 } else { // if player pressed button after the button shows "CLICK!"
-                    countDownTimer.cancel();
-                    countDownTimer.setTimerStopped(true);
-                    tStart = countDownTimer.gettStart(); // get the start time
-                    long tElasped = System.currentTimeMillis() - tStart; // compute the reaction time
-                    reactionTimes.add((int)tElasped);
-                    rtRecord.saveRTInFile(reactionTimes);
-                    resultDialog((int)tElasped); // pops up the result dialog to show the result to player
+                    resultDialog(reactionTimer.reactionTimeMeasure(countDownTimer)); // pops up the result dialog to show the result to player
                 }
             }
         });
@@ -90,6 +107,8 @@ public class ReactionTimerActivity extends ActionBarActivity {
 
     private void resultDialog(final int reactionTime) {
         final AlertDialog.Builder alert=new AlertDialog.Builder(this);
+        reactionTimes.add(reactionTime);
+        rtRecord.saveRTInFile(reactionTimes);//save reaction time into the file
         alert.setTitle("Your reaction time is...");
         // show result briefly to the player
         alert.setMessage(String.format("%d milliseconds!", reactionTime));
